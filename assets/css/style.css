@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    /* Definindo a famÃ­lia de fontes padrÃĢo */
+}
+
+.cabecalho {
+    display: flex;
+    background-color: #fff;
+    border-radius: 10px;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.logo {
+    height: 100px;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.banner {
+    display: flex;
+    justify-content: center;
+    background-image: url('../images/treino.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 400px;
+    padding-top: 100px;
+    border-radius: 10px;
+}
+
+.titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #6b9ab1;
+    height: 70px;
+}
+
+.enderecos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    justify-content: center;
+    height: 500px;
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+.professor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.profile{
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+}
+.info-professor{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #ccc;
+    border-radius: 30px;
+}
+
+.banner_headline h1,
+h2,
+h3 {
+    text-align: center;
+}
+
+.banner_headline {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #EEE;
+    margin-top: 50px;
+    border-radius: 10px;
+    opacity: 60%;
+    margin: 20px;
+}
+
+.banner_headline:hover {
+    opacity: 100%;
+}
+
+nav .active a,
+nav a:hover {
+    background-color: #39aae1;
+    color: #fff;
+}
+
+nav a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #727272;
+    font-family: Arial, Helvetica, sans-serif;
+}
