@@ -3,7 +3,6 @@
 * {
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-    /* Definindo a famÃ­lia de fontes padrÃĢo */
 }
 
 .cabecalho {
@@ -12,7 +11,6 @@
     border-radius: 10px;
     justify-content: space-around;
     align-items: center;
-
 }
 
 .logo {
@@ -33,9 +31,7 @@ ul {
 .banner {
     display: flex;
     justify-content: center;
-    background-image: url('../images/treino.jpg');
-    background-position: center;
-    background-size: cover;
+    background: url('../images/treino.jpg') center/cover;
     height: 400px;
     padding-top: 100px;
     border-radius: 10px;
@@ -52,12 +48,12 @@ ul {
     height: 70px;
 }
 
-.enderecos {
+.containers {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-radius: 10px;
     justify-content: center;
+    border-radius: 10px;
     height: 500px;
 }
 
@@ -65,44 +61,41 @@ ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    
 }
-.professor{
+
+.professor {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.profile{
+
+.profile {
     height: 100px;
     width: 100px;
     border-radius: 50px;
 }
-.info-professor{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    background-color: #ccc;
-    border-radius: 30px;
-}
 
-.banner_headline h1,
-h2,
-h3 {
+.banner_headline h1, h2, h3,
+.info-professor h1, h2, h3{
     text-align: center;
 }
 
-.banner_headline {
+.banner_headline,
+.info-professor {
     flex: 1;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    background-color: #EEE;
-    margin-top: 50px;
+    background-color: #eee;
+    margin: 20px;
     border-radius: 10px;
     opacity: 60%;
-    margin: 20px;
+}
+
+.info-professor {
+    width: 200px;
 }
 
 .banner_headline:hover {
