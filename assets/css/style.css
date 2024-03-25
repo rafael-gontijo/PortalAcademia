@@ -67,7 +67,7 @@ nav a {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 5px;
+
     padding: 20px;
     border-radius: 10px;
     background-color: #6b9ab1;
@@ -144,17 +144,6 @@ h3 {
 .banner_headline:hover {
     opacity: 100%;
 }
-
-#container-horarios {
-    margin-top: 150px;
-    margin-bottom: 130px;
-}
-
-#container-depoimentos {
-    margin-top: 100px;
-    margin-bottom: 130px;
-}
-
 .horario {
     opacity: 1;
     padding: 30px;
