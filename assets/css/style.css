@@ -63,25 +63,41 @@ ul {
     justify-content: center;
 }
 
-.professor {
+.professor{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
+.depoimento {
+    flex: 1; /* Para que os cards de depoimentos ocupem o mesmo espaço */
+    margin: 20px; /* Adiciona margem entre os cards */
+    max-width: 500px; /* Define uma largura máxima para os cards */
+    background-color: #eee;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
 .profile {
     height: 100px;
     width: 100px;
     border-radius: 50px;
 }
-
-.banner_headline h1, h2, h3,
-.info-professor h1, h2, h3{
+#cards-depoimentos{
+    display: flex;
+    flex-direction: row;
+}
+.banner_headline h1,
+h2,
+h3,
+.info-professor h1,
+h2,
+h3 {
     text-align: center;
 }
 
 .banner_headline,
-.info-professor {
+.info-professor,
+.horario, .info-depoimentos {
     flex: 1;
     display: flex;
     flex-wrap: wrap;
@@ -101,7 +117,18 @@ ul {
 .banner_headline:hover {
     opacity: 100%;
 }
-
+#container-horarios{
+    margin-top: 150px; /* Adicionando margem superior */
+    margin-bottom: 130px;
+}
+#container-depoimentos{
+    margin-top: 100px; /* Adicionando margem superior */
+    margin-bottom: 130px;
+}
+.horario {
+    opacity: 1;
+    padding: 30px;
+}
 nav .active a,
 nav a:hover {
     background-color: #39aae1;
