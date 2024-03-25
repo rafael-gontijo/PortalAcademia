@@ -9,8 +9,9 @@
     display: flex;
     background-color: #fff;
     border-radius: 10px;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    padding: 10px 20px;
 }
 
 .logo {
@@ -20,12 +21,37 @@
 ul {
     display: flex;
     list-style: none;
-    justify-content: flex-end;
 }
 
 .menu {
     display: flex;
     align-items: center;
+}
+
+.menu-btn {
+    display: none;
+    cursor: pointer;
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+nav ul.active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #727272;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .banner {
@@ -54,7 +80,8 @@ ul {
     align-items: center;
     justify-content: center;
     border-radius: 10px;
-    height: 500px;
+    height: auto;
+    padding: 20px;
 }
 
 .cards-container {
@@ -63,29 +90,28 @@ ul {
     justify-content: center;
 }
 
-.professor{
+.professor {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 .depoimento {
-    flex: 1; /* Para que os cards de depoimentos ocupem o mesmo espaço */
-    margin: 20px; /* Adiciona margem entre os cards */
-    max-width: 500px; /* Define uma largura máxima para os cards */
+    flex: 1;
+    margin: 20px;
+    max-width: 500px;
     background-color: #eee;
     border-radius: 10px;
     padding: 20px;
     text-align: center;
 }
+
 .profile {
     height: 100px;
     width: 100px;
     border-radius: 50px;
 }
-#cards-depoimentos{
-    display: flex;
-    flex-direction: row;
-}
+
 .banner_headline h1,
 h2,
 h3,
@@ -97,7 +123,8 @@ h3 {
 
 .banner_headline,
 .info-professor,
-.horario, .info-depoimentos {
+.horario,
+.info-depoimentos {
     flex: 1;
     display: flex;
     flex-wrap: wrap;
@@ -117,29 +144,86 @@ h3 {
 .banner_headline:hover {
     opacity: 100%;
 }
-#container-horarios{
-    margin-top: 150px; /* Adicionando margem superior */
+
+#container-horarios {
+    margin-top: 150px;
     margin-bottom: 130px;
 }
-#container-depoimentos{
-    margin-top: 100px; /* Adicionando margem superior */
+
+#container-depoimentos {
+    margin-top: 100px;
     margin-bottom: 130px;
 }
+
 .horario {
     opacity: 1;
     padding: 30px;
 }
+
 nav .active a,
 nav a:hover {
     background-color: #39aae1;
     color: #fff;
 }
 
-nav a {
-    display: block;
-    padding: 15px;
-    text-decoration: none;
-    text-transform: uppercase;
-    color: #727272;
-    font-family: Arial, Helvetica, sans-serif;
+/* Media queries para dispositivos menores */
+@media screen and (max-width: 768px) {
+    .cabecalho {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo {
+        margin-bottom: 20px;
+    }
+
+    .menu {
+        margin-top: 20px;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column; /* Alteração: Altera o layout para uma lista vertical */
+        align-items: center; /* Alinha os itens centralmente */
+        padding: 0; /* Remove o preenchimento padrão */
+    }
+
+    nav li {
+        margin-bottom: 10px; /* Adiciona espaço entre os itens */
+    }
+
+    nav a {
+        padding: 10px; /* Ajusta o preenchimento */
+    }
+
+    .banner {
+        height: 300px;
+        padding-top: 50px;
+    }
+
+    .titulo {
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .containers {
+        padding: 10px;
+    }
+
+    .professor,
+    .depoimento {
+        margin: 10px;
+    }
+
+    .horario table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    .horario table td,
+    .horario table th {
+        padding: 10px;
+        font-size: 14px;
+        border: 1px solid #ddd;
+    }
 }
