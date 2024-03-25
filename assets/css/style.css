@@ -6,16 +6,28 @@
 }
 
 .cabecalho {
+    position: fixed;
+    /* Adiciona posição fixa */
+    top: 0;
+    /* Alinha o cabeçalho no topo */
+    left: 0;
+    /* Alinha o cabeçalho à esquerda */
+    width: 100%;
+    /* Define a largura como 100% */
+    z-index: 999;
+    /* Ajusta o z-index para garantir que fique acima de outros elementos */
     display: flex;
     background-color: #fff;
     border-radius: 10px;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
+    height: 50px;
 }
 
+
 .logo {
-    height: 100px;
+    height: 50px;
 }
 
 ul {
@@ -59,15 +71,16 @@ nav a {
     justify-content: center;
     background: url('../images/treino.jpg') center/cover;
     height: 400px;
-    padding-top: 100px;
     border-radius: 10px;
+    margin-bottom: 5px;
+    margin-top: 50px;
 }
+
 
 .titulo {
     display: flex;
     justify-content: center;
     align-items: center;
-
     padding: 20px;
     border-radius: 10px;
     background-color: #6b9ab1;
@@ -144,6 +157,7 @@ h3 {
 .banner_headline:hover {
     opacity: 100%;
 }
+
 .horario {
     opacity: 1;
     padding: 30px;
@@ -156,10 +170,14 @@ nav a:hover {
 }
 
 /* Media queries para dispositivos menores */
+
 @media screen and (max-width: 768px) {
     .cabecalho {
-        flex-direction: column;
-        align-items: center;
+        position: static; /* Altera a posição de fixed para static */
+        flex-direction: column; /* Altera a direção do flex para column */
+        align-items: center; /* Centraliza os itens na vertical */
+        height: auto; /* Altura automática */
+        padding: 20px 0; /* Adapta o preenchimento */
     }
 
     .logo {
@@ -172,17 +190,22 @@ nav a:hover {
 
     nav ul {
         display: flex;
-        flex-direction: column; /* Alteração: Altera o layout para uma lista vertical */
-        align-items: center; /* Alinha os itens centralmente */
-        padding: 0; /* Remove o preenchimento padrão */
+        flex-direction: column;
+        /* Alteração: Altera o layout para uma lista vertical */
+        align-items: center;
+        /* Alinha os itens centralmente */
+        padding: 0;
+        /* Remove o preenchimento padrão */
     }
 
     nav li {
-        margin-bottom: 10px; /* Adiciona espaço entre os itens */
+        margin-bottom: 10px;
+        /* Adiciona espaço entre os itens */
     }
 
     nav a {
-        padding: 10px; /* Ajusta o preenchimento */
+        padding: 10px;
+        /* Ajusta o preenchimento */
     }
 
     .banner {
