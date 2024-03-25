@@ -161,6 +161,11 @@ h3 {
 .horario {
     opacity: 1;
     padding: 30px;
+    text-align: center;
+}
+.horario table {
+    width: 100%;
+    border-collapse: collapse;
 }
 
 nav .active a,
@@ -232,10 +237,12 @@ nav a:hover {
         border-collapse: collapse;
     }
 
-    .horario table td,
-    .horario table th {
-        padding: 10px;
-        font-size: 14px;
-        border: 1px solid #ddd;
+    .horario table th,
+    .horario table td {
+        font-size: 12px; /* Reduz o tamanho da fonte */
+        padding: 8px; /* Reduz o padding */
+    }
+    .horario{
+        width: 50%;
     }
 }
