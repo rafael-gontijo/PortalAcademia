@@ -187,6 +187,13 @@ nav a:hover {
 
     .logo {
         margin-bottom: 20px;
+/*        position: fixed;
+        /* Adiciona posição fixa */
+/*        top: 0;
+        /* Alinha o cabeçalho no topo */
+/*        left: 0;
+        /* Alinha o cabeçalho à esquerda */
+/*        z-index: 999;*/
     }
 
     .menu {
@@ -215,7 +222,6 @@ nav a:hover {
 
     .banner {
         height: 300px;
-        padding-top: 50px;
     }
 
     .titulo {
@@ -239,8 +245,8 @@ nav a:hover {
 
     .horario table th,
     .horario table td {
-        font-size: 12px; /* Reduz o tamanho da fonte */
-        padding: 8px; /* Reduz o padding */
+        font-size: 12px;
+        padding: 8px;
     }
     .horario{
         width: 50%;
