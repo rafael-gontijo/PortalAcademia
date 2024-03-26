@@ -105,7 +105,7 @@ nav a {
 
 .professor {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
 }
 
@@ -152,8 +152,11 @@ h3 {
 
 .info-professor {
     width: 200px;
+    height: 400px;
 }
-
+#marcelinho, #hugao, #richard{
+    flex-direction: row-reverse;
+}
 .banner_headline:hover {
     opacity: 100%;
 }
@@ -237,7 +240,14 @@ nav a:hover {
     .depoimento {
         margin: 10px;
     }
-
+    #alex, #formiga, #hugao{
+        display: flex;
+        flex-direction: row;
+    }
+    #kaique, #marcelinho, #richard{
+        display: flex;
+        flex-direction: row-reverse;
+    }
     .horario table {
         width: 100%;
         border-collapse: collapse;
