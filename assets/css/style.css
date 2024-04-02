@@ -137,7 +137,8 @@ h3 {
 .banner_headline,
 .info-professor,
 .horario,
-.info-depoimentos {
+.info-depoimentos,
+.info-login {
     flex: 1;
     display: flex;
     flex-wrap: wrap;
@@ -149,7 +150,9 @@ h3 {
     border-radius: 10px;
     opacity: 60%;
 }
-
+.info-login{
+    padding: 10px;
+}
 .info-professor {
     width: 200px;
     height: 400px;
@@ -165,11 +168,16 @@ h3 {
     opacity: 100%;
 }
 
-.professor {
+.professor,
+.login {
     border: 3px solid #ddd;
     border-radius: 15px;
     margin: 10px;
     padding: 5px;
+}
+
+.login {
+    height: 250px;
 }
 
 .horario {
@@ -183,15 +191,19 @@ h3 {
     border-collapse: collapse;
     border: 1px solid black;
 }
-th, td {
-    border: 1px solid black; 
+
+th,
+td {
+    border: 1px solid black;
     padding: 8px;
 }
-#horario-outros{
+
+#horario-outros {
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
 nav .active a,
 nav a:hover {
     background-color: #39aae1;
@@ -205,6 +217,7 @@ nav a:hover {
     background-color: #002a38;
     font-family: Menlo, monospace;
 }
+
 .lista-rodape {
     display: inline-grid;
     grid-auto-flow: row;
@@ -212,27 +225,31 @@ nav a:hover {
     justify-items: center;
     margin: auto;
     grid-auto-flow: column;
-  }
-  footer img{
+}
+
+footer img {
     height: 15px;
-  }
-  footer a {
+}
+
+footer a {
     color: white;
     text-decoration: none;
     box-shadow: inset 0 -1px 0 hsla(0, 0%, 100%, 0.4);
-  }
-  footer a:hover {
+}
+
+footer a:hover {
     box-shadow: inset 0 -1.2em 0 hsla(0, 0%, 100%, 0.4);
-  }
-  
-  footer li:last-child {
+}
+
+footer li:last-child {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
-  }
-  
-  footer li:hover ~ li p {
+}
+
+footer li:hover~li p {
     animation: wave-animation 0.3s infinite;
-  }
+}
+
 /* Media queries para dispositivos menores */
 
 @media screen and (max-width: 768px) {
