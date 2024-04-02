@@ -187,7 +187,11 @@ th, td {
     border: 1px solid black; 
     padding: 8px;
 }
-
+#horario-outros{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 nav .active a,
 nav a:hover {
     background-color: #39aae1;
