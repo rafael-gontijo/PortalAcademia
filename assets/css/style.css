@@ -154,11 +154,22 @@ h3 {
     width: 200px;
     height: 400px;
 }
-#marcelinho, #hugao, #richard{
-    flex-direction: row-reverse;
+
+#marcelinho,
+#hugao,
+#richard {
+    flex-direction: row;
 }
+
 .banner_headline:hover {
     opacity: 100%;
+}
+
+.professor {
+    border: 3px solid #ddd;
+    border-radius: 15px;
+    margin: 10px;
+    padding: 5px;
 }
 
 .horario {
@@ -166,6 +177,7 @@ h3 {
     padding: 30px;
     text-align: center;
 }
+
 .horario table {
     width: 100%;
     border-collapse: collapse;
@@ -177,26 +189,66 @@ nav a:hover {
     color: #fff;
 }
 
+.div-rodape {
+    display: flex;
+    height: 50px;
+    width: 100%;
+    background-color: #002a38;
+    font-family: Menlo, monospace;
+}
+.lista-rodape {
+    display: inline-grid;
+    grid-auto-flow: row;
+    grid-gap: 24px;
+    justify-items: center;
+    margin: auto;
+    grid-auto-flow: column;
+  }
+  footer img{
+    height: 15px;
+  }
+  footer a {
+    color: white;
+    text-decoration: none;
+    box-shadow: inset 0 -1px 0 hsla(0, 0%, 100%, 0.4);
+  }
+  footer a:hover {
+    box-shadow: inset 0 -1.2em 0 hsla(0, 0%, 100%, 0.4);
+  }
+  
+  footer li:last-child {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+  
+  footer li:hover ~ li p {
+    animation: wave-animation 0.3s infinite;
+  }
 /* Media queries para dispositivos menores */
 
 @media screen and (max-width: 768px) {
     .cabecalho {
-        position: static; /* Altera a posição de fixed para static */
-        flex-direction: column; /* Altera a direção do flex para column */
-        align-items: center; /* Centraliza os itens na vertical */
-        height: auto; /* Altura automática */
-        padding: 20px 0; /* Adapta o preenchimento */
+        position: static;
+        /* Altera a posição de fixed para static */
+        flex-direction: column;
+        /* Altera a direção do flex para column */
+        align-items: center;
+        /* Centraliza os itens na vertical */
+        height: auto;
+        /* Altura automática */
+        padding: 20px 0;
+        /* Adapta o preenchimento */
     }
 
     .logo {
         margin-bottom: 20px;
-/*        position: fixed;
+        /*        position: fixed;
         /* Adiciona posição fixa */
-/*        top: 0;
+        /*        top: 0;
         /* Alinha o cabeçalho no topo */
-/*        left: 0;
+        /*        left: 0;
         /* Alinha o cabeçalho à esquerda */
-/*        z-index: 999;*/
+        /*        z-index: 999;*/
     }
 
     .menu {
@@ -240,14 +292,21 @@ nav a:hover {
     .depoimento {
         margin: 10px;
     }
-    #alex, #formiga, #hugao{
+
+    #alex,
+    #formiga,
+    #hugao {
         display: flex;
         flex-direction: row;
     }
-    #kaique, #marcelinho, #richard{
+
+    #kaique,
+    #marcelinho,
+    #richard {
         display: flex;
         flex-direction: row-reverse;
     }
+
     .horario table {
         width: 100%;
         border-collapse: collapse;
