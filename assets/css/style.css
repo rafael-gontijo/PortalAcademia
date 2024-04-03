@@ -109,6 +109,12 @@ nav a {
     align-items: center;
 }
 
+.endereco {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .depoimento {
     flex: 1;
     margin: 20px;
@@ -150,9 +156,11 @@ h3 {
     border-radius: 10px;
     opacity: 60%;
 }
-.info-login{
+
+.info-login {
     padding: 10px;
 }
+
 .info-professor {
     width: 200px;
     height: 400px;
@@ -160,7 +168,8 @@ h3 {
 
 #marcelinho,
 #hugao,
-#richard {
+#richard,
+.endereco {
     flex-direction: row;
 }
 
@@ -169,6 +178,7 @@ h3 {
 }
 
 .professor,
+.endereco,
 .login {
     border: 3px solid #ddd;
     border-radius: 15px;
@@ -176,14 +186,24 @@ h3 {
     padding: 5px;
 }
 
+.endereco {
+    width: 600px;
+}
+
+.endereco h2,
+.endereco h3 {
+    font-size: medium;
+}
+
 .login {
-    height: 250px;
+    height: 240px;
 }
 
 .horario {
     opacity: 1;
     padding: 30px;
     text-align: center;
+    justify-content: center;
 }
 
 .horario table {
@@ -212,10 +232,15 @@ nav a:hover {
 
 .div-rodape {
     display: flex;
-    height: 50px;
+    height: 80px;
     width: 100%;
     background-color: #002a38;
     font-family: Menlo, monospace;
+}
+
+.mapa {
+    margin: 30px;
+    border-radius: 10px;
 }
 
 .lista-rodape {
@@ -264,6 +289,34 @@ footer li:hover~li p {
         /* Altura automática */
         padding: 20px 0;
         /* Adapta o preenchimento */
+    }
+
+    .endereco {
+        width: 90%;
+    }
+
+    .mapa {
+        display: none;
+    }
+
+    /*
+  #dennis-horario,
+  #helil-horario {
+    display: none;
+  }
+*/
+    .div-rodape {
+        height: 350px;
+    }
+
+    .lista-rodape {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .lista-rodape li {
+        margin: 10px 0;
     }
 
     .logo {
@@ -333,6 +386,11 @@ footer li:hover~li p {
         flex-direction: row-reverse;
     }
 
+    .horario {
+        width: 90%;
+        font-size: small;
+    }
+
     .horario table {
         width: 100%;
         border-collapse: collapse;
@@ -340,8 +398,11 @@ footer li:hover~li p {
 
     .horario table th,
     .horario table td {
-        font-size: 12px;
+        font-size: 5px;
         padding: 8px;
     }
 
+    .login {
+        height: 320px;
+    }
 }
